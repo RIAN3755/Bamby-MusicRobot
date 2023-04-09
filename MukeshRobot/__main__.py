@@ -76,7 +76,7 @@ PM_START_TEX = """
 
 
 PM_START_TEXT = """ 
-*ʜᴇʏ* {} , 🥀
+*ʜᴇʏ* {} ,🍃
 *๏ ɪ'ᴍ {} ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs!
 ʜɪᴛ ʜᴇʟᴘ ᴛᴏ ғɪɴᴅ ᴏᴜᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ɪɴ ᴍʏ ғᴜʟʟ ᴘᴏᴛᴇɴᴛɪᴀʟ!*
 ➻ ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ  ➕ ᴍᴜsɪᴄ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴀɴᴅ ɪ ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
@@ -91,15 +91,15 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="⚡ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs⚡", callback_data="help_back"),
+        InlineKeyboardButton(text="➻ ᴄᴏᴍᴍᴀɴᴅs ➻", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="🏡 ᴀʙᴏᴜᴛ 🏡 ", callback_data="mukesh_"),
-        InlineKeyboardButton(text="📍sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ📍", url=f"https://t.me/{SUPPORT_CHAT}"),
+      
+        InlineKeyboardButton(text=" sᴜᴍᴘᴘᴏʀᴛ ", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
-        InlineKeyboardButton(text="🥀ᴅᴇᴠᴇʟᴏᴩᴇʀ🥀", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="✨ ᴍᴜsɪᴄ ✨", callback_data="Music_"),
+        InlineKeyboardButton(text=" ˹ᴅᴀᴅᴅʏ˼ ", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="ᴍυsɪᴄ", callback_data="Music_"),
     ],
 ]
 
@@ -216,7 +216,7 @@ def start(update: Update, context: CallbackContext):
             first_name = update.effective_user.first_name
             
             x=update.effective_message.reply_sticker(
-                "CAACAgUAAxkBAAI33mLYLNLilbRI-sKAAob0P7koTEJNAAIOBAACl42QVKnra4sdzC_uKQQ")
+                "CAACAgEAAx0CYRUl4wAC-rZkLXPTCaL3VtxNnwgfpjA4WNy8dwACjwMAAt8_SERNNQakTqcJry8E")
             x.delete()
             usr = update.effective_user
             lol = update.effective_message.reply_text(
@@ -240,7 +240,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ  !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code>".format(
+            caption="ᴀʙʜɪ ʜᴜᴍ ᴢɪɴᴅᴀ ʜᴇ  !\n<b>ᴍᴀʀɪ ɴᴀʜɪ ʜᴜ :):</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -396,19 +396,19 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="🚩sᴜᴩᴩᴏʀᴛ🚩", callback_data="mukesh_support"
+                            text="➻ sᴜᴍᴘᴘᴏʀᴛ ➻", callback_data="mukesh_support"
                         ),
                         InlineKeyboardButton(
-                            text="✨ᴄᴏᴍᴍᴀɴᴅs✨", callback_data="help_back"
+                            text="➻ ᴄᴏᴍᴍᴀɴᴅs ➻", callback_data="help_back"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="👨‍💻ᴅᴇᴠᴇʟᴏᴩᴇʀ👨‍💻", url=f"tg://user?id={OWNER_ID}"
+                            text="ʙᴏᴛ ᴄʀᴇᴀᴛᴇʀ", url=f"tg://user?id={OWNER_ID}"
                         ),
                         InlineKeyboardButton(
-                            text="🥀sᴏᴜʀᴄᴇ🥀",
-                            url="https://github.com/noob-mukesh/MukeshRobot",
+                            text="sᴏᴜʀᴄᴇ",
+                            url="https://github.com/bamby-musicrobot/MukeshRobot",
                         ),
                     ],
                     [
